@@ -1,7 +1,6 @@
-// Replace `nextjs-github-pages` with your Github repo project name.
-const isProd = process.env.NODE_ENV === 'production'
+const basePath = process.env.NODE_ENV === 'production' ? '/repo' : '';
 
 module.exports = {
-  // Use the prefix in production and not development.
-  assetPrefix: isProd ? '/notes-community-classroom/' : '',
-}
+  basePath,
+  assetPrefix: `${basePath}/`
+};
