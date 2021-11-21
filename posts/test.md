@@ -5,7 +5,7 @@ excerpt: 'Some random text'
 cover_image: '/images/posts/img8.jpg'
 ---
 
-#Test post
+# Test post
 
 This is a random test post
 
