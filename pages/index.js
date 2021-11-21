@@ -5,14 +5,11 @@ import Head from 'next/head'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
 
-const prefix = '/notes-community-classroom'
-
 export default function Home({ posts }) {
   console.log(posts)
   return (
     <div>
       <Head>
-        <link rel="shortcut icon" href={prefix + '/favicon.ico'} />
         <title>Notes CommClassroom</title>
       </Head>
 
