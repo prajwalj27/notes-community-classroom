@@ -6,7 +6,7 @@ const prefix = '/notes-community-classroom'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <link rel="icon" href={prefix + '/notes-logo.png'} />
+      <link rel="shortcut icon" href={prefix + '/favicon.ico'} />
       <Header />
       <main className='container'>
         <Component {...pageProps} />
