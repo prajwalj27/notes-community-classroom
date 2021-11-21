@@ -4,6 +4,8 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
 
+const prefix = '/notes-community-classroom'
+
 export default function NotesPage({
   frontmatter: { title, date, cover_image },
   slug,
@@ -17,7 +19,7 @@ export default function NotesPage({
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
+        <img src={prefix + cover_image} alt='' />
         <div className='post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>

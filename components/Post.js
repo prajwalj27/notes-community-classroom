@@ -1,9 +1,11 @@
 import Link from 'next/link'
 
+const prefix = '/notes-community-classroom';
+
 export default function Post({ post }) {
     return (
         <div className="card">
-            <img src={post.frontmatter.cover_image} alt='' />
+            <img src={prefix + post.frontmatter.cover_image} alt='' />
             
             <div className='post-date'>Posted on {post.frontmatter.date}</div>
 
